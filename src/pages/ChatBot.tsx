@@ -178,7 +178,7 @@ export function ChatBot() {
     }
   };
 
-  // Voice interface functions are not modified here
+  // Voice interface functions
   const startVoiceRecording = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
@@ -223,49 +223,74 @@ export function ChatBot() {
     setIsVoiceOpen(false);
   };
 
-  // Modified handleSubmit that sends the full file(s) to the Flask /ocr endpoint
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!message.trim() && uploadedFiles.length === 0) return;
 
-    // Append the user's message to chat history
+    // 1) Add the user's message to the chat
     const userMessage: Message = {
       role: 'user',
       content: message,
       timestamp: new Date(),
     };
     setChatHistory((prev) => [...prev, userMessage]);
-    const currentMessage = message; // capture message before clearing
+    const currentMessage = message; // store the typed message
     setMessage('');
     setLoading(true);
 
-    // Create FormData to send to the Flask backend
+    // 2) Build form data
     const formData = new FormData();
     formData.append('message', currentMessage);
     uploadedFiles.forEach((fileObj) => {
       if (fileObj.file) {
         formData.append('file', fileObj.file);
-        // Optionally, append the message with each file if your backend expects it
-        formData.append('message', currentMessage);
+        // Optionally re-append message if your backend expects it per file
+        // formData.append('message', currentMessage);
       }
     });
 
     try {
-      // Send form data to the Flask /ocr endpoint
       const response = await fetch('http://localhost:5000/ocr', {
         method: 'POST',
         body: formData,
       });
       const result = await response.json();
 
-      // Expect the backend to return a JSON object with a "response" field
+      // We'll assume your backend returns an object like:
+      // {
+      //   "type": "ocr",
+      //   "ocr_text": "...",
+      //   "claude_response": {
+      //       "content": {
+      //           "text": "Claude's response..."
+      //       }
+      //   }
+      // }
+      // or for text-only:
+      // {
+      //   "type": "text_only",
+      //   "message": "Hello",
+      //   "claude_response": {
+      //       "content": {
+      //           "text": "Claude's text-only response..."
+      //       }
+      //   }
+      // }
+
+      let aiText = 'No response from server.';
+      if (result.claude_response && result.claude_response.content) {
+        // We expect .content.text
+        aiText = result.claude_response.content.text || aiText;
+      }
+
+      // 3) Add an assistant message to the chat
       const aiResponse: Message = {
         role: 'assistant',
-        content: result.response,
+        content: aiText,
         timestamp: new Date(),
       };
       setChatHistory((prev) => [...prev, aiResponse]);
-    } catch (error: any) {
+    } catch (error) {
       console.error('Error processing request:', error);
       const errorMsg: Message = {
         role: 'assistant',
@@ -288,7 +313,7 @@ export function ChatBot() {
       name: file.name,
       type: file.type,
       url: file.type.startsWith('image/') ? URL.createObjectURL(file) : null,
-      file: file, // store the original File object for full upload
+      file: file,
     }));
 
     setUploadedFiles((prev) => [...prev, ...newFiles]);
@@ -530,8 +555,8 @@ export function ChatBot() {
                       <button
                         onClick={isRecording ? stopVoiceRecording : startVoiceRecording}
                         className={`p-4 rounded-full ${
-                          isRecording 
-                            ? 'bg-red-500 hover:bg-red-600' 
+                          isRecording
+                            ? 'bg-red-500 hover:bg-red-600'
                             : 'bg-blue-500 hover:bg-blue-600'
                         } text-white transition-colors`}
                       >
@@ -558,7 +583,7 @@ export function ChatBot() {
                     placeholder="Type your message..."
                     className="flex-1 bg-[#2a2a2a] border border-[#404040] rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500"
                   />
-                  
+
                   {/* File Upload Button */}
                   <input
                     ref={fileInputRef}

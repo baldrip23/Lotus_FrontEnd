@@ -131,10 +131,22 @@ export function Dashboard() {
     setApplicationStep(0);
   };
 
-  const handleContinue = () => {
+  const handleContinue = async () => {
     if (applicationStep < 2) {
       setApplicationStep(prev => prev + 1);
       if (applicationStep === 0) {
+        // Make empty POST request
+        try {
+          await fetch('https://api.legal-aid.com/erap/apply', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({})
+          });
+        } catch (error) {
+          console.error('Error submitting application:', error);
+        }
         simulateSeleniumProgress();
       }
     } else {
