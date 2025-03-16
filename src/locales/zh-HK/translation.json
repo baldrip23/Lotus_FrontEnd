@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "主頁",
+    "resources": "資源",
+    "contact": "聯絡我哋",
+    "login": "登入",
+    "signOut": "登出",
+    "dashboard": "控制面板"
+  },
+  "auth": {
+    "welcomeBack": "歡迎返嚟",
+    "signInToDashboard": "登入以訪問你嘅控制面板",
+    "emailAddress": "電郵地址",
+    "enterEmail": "輸入你嘅電郵",
+    "password": "密碼",
+    "enterPassword": "輸入你嘅密碼",
+    "signingIn": "正在登入...",
+    "signIn": "登入",
+    "noAccount": "仲未有帳號？",
+    "signUp": "註冊",
+    "joinCommunity": "加入我哋嘅社區",
+    "createAccount": "創建你嘅帳號",
+    "whatName": "你叫咩名？",
+    "enterFullName": "輸入你嘅全名",
+    "whatEmail": "你嘅電郵地址係？",
+    "createPassword": "創建密碼",
+    "passwordRequirement": "至少需要8個字符",
+    "creatingAccount": "正在創建帳號...",
+    "haveAccount": "已經有帳號？"
+  },
+  "chat": {
+    "greeting": "你好！我今日可以點幫到你？",
+    "placeholder": "輸入你嘅訊息...",
+    "send": "發送",
+    "thinking": "AI正在思考緊...",
+    "error": "對唔住，處理你嘅請求時出現錯誤。"
+  },
+  "onboarding": {
+    "title": "法律援助助手",
+    "subtitle": "等我哋為你提供個人化嘅法律支援",
+    "questions": {
+      "language": "你好！我係你嘅法律助手。喺開始之前，請選擇你嘅首選語言。",
+      "full_name": "你叫咩全名？",
+      "date_of_birth": "你幾時出世？(月/日/年)",
+      "current_sf_resident": "你而家係唔係三藩市居民？",
+      "household_size": "你屋企有幾多人？",
+      "annual_household_income": "你屋企嘅年收入總額係幾多？",
+      "has_past_due_rent": "你有冇過期未交嘅租金？",
+      "cannot_afford_move_in_costs": "你負擔唔負擔到新租屋嘅入住費用？",
+      "if_applying_for_back_rent_financial_hardship_within_12_months": "過去12個月內，你有冇因為經濟困難而影響咗租金支付？",
+      "qualify_as_individual_or_family": "根據HUD指引，你係唔係符合個人或家庭資格？",
+      "head_of_household_minimum_age_or_emancipated": "你係唔係已經年滿18歲或者已經獲得法定解放？",
+      "annual_income_within_established_limits": "你嘅年收入係唔係喺規定限額之內？",
+      "pass_criminal_background_check": "你可唔可以通過犯罪背景調查？",
+      "ssn_documentation_provided_or_certified": "你可唔可以提供社會安全號碼文件或認證？",
+      "hud_citizenship_or_immigration_requirement_met": "你係唔係符合HUD公民身份或合格移民身份要求？",
+      "no_meth_production_conviction": "你可唔可以確認冇製造冰毒嘅定罪記錄？",
+      "not_subject_to_sex_offender_registration": "你可唔可以確認唔需要進行性犯罪者登記？",
+      "no_outstanding_rent_debt": "你有冇未清償嘅租金債務？",
+      "household_income_below_50_ami": "你屋企嘅收入係唔係低過地區中位收入（AMI）嘅50%？",
+      "assistance_exception_if_receiving_assistance": "你而家係唔係正在接受其他住屋援助？",
+      "non_discrimination_policy": "你同唔同意遵守我哋嘅非歧視政策？",
+      "photo_id": "你有冇有效嘅政府發出嘅帶相身份證？",
+      "proof_of_total_household_income": "你可唔可以提供屋企總收入證明？",
+      "rental_agreement_or_address_proof": "你有冇租約或者地址證明？",
+      "proof_of_rent_amount": "你可唔可以提供租金金額證明？",
+      "tenant_ledger": "你可唔可以攞到租客賬本？",
+      "landlord_contact_info": "你可唔可以提供業主嘅聯絡資料？",
+      "w9_form": "你可唔可以提供填好嘅W-9表格？"
+    },
+    "completion": "多謝！你嘅個人資料已經設置好。我而家帶你去控制面板。",
+    "invalidInput": "對唔住，輸入似乎無效。請再試過。",
+    "options": {
+      "yes": "係",
+      "no": "唔係"
+    }
+  }
+}

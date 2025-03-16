@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "home": "Home",
+    "resources": "Resources", 
+    "contact": "Contact",
+    "login": "Log In",
+    "signOut": "Sign Out",
+    "dashboard": "Dashboard"
+  },
+  "auth": {
+    "welcomeBack": "Welcome Back",
+    "signInToDashboard": "Sign in to access your dashboard",
+    "emailAddress": "Email Address",
+    "enterEmail": "Enter your email",
+    "password": "Password",
+    "enterPassword": "Enter your password",
+    "signingIn": "Signing in...",
+    "signIn": "Sign In",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up",
+    "joinCommunity": "Join Our Community",
+    "createAccount": "Create your account",
+    "whatName": "What's your name?",
+    "enterFullName": "Enter your full name",
+    "whatEmail": "What's your email address?",
+    "createPassword": "Create a password",
+    "passwordRequirement": "Must be at least 8 characters",
+    "creatingAccount": "Creating account...",
+    "haveAccount": "Already have an account?"
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "overview": "Here's an overview of your legal assistance dashboard",
+    "search": {
+      "placeholder": "Search documents, appointments, or ask a question..."
+    },
+    "quickActions": {
+      "aiAssistant": {
+        "title": "Chat with AI Assistant",
+        "description": "Get instant legal guidance and document help"
+      },
+      "documentReview": {
+        "title": "Document Review",
+        "description": "Upload documents for AI analysis"
+      },
+      "consultation": {
+        "title": "Schedule Consultation",
+        "description": "Book time with a legal expert"
+      }
+    },
+    "documents": {
+      "title": "Recent Documents",
+      "viewAll": "View all",
+      "types": {
+        "pdf": "PDF",
+        "docx": "DOCX"
+      }
+    },
+    "appointments": {
+      "title": "Upcoming Appointments",
+      "viewAll": "View all",
+      "types": {
+        "virtual": "Virtual",
+        "inPerson": "In-person"
+      },
+      "at": "at"
+    }
+  },
+  "chat": {
+    "greeting": "Hello! How can I assist you today?",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "thinking": "AI is thinking...",
+    "error": "Sorry, there was an error processing your request."
+  },
+  "onboarding": {
+    "title": "Legal Aid Assistant",
+    "subtitle": "Let's get you set up with personalized legal support",
+    "questions": {
+      "language": "Hi! I'm your legal assistant. Before we begin, please select your preferred language.",
+      "full_name": "What is your full name?",
+      "date_of_birth": "What is your date of birth? (MM/DD/YYYY)",
+      "current_sf_resident": "Are you currently a resident of San Francisco?",
+      "household_size": "How many people live in your household?",
+      "annual_household_income": "What is your total annual household income?",
+      "has_past_due_rent": "Do you have any past-due rent?",
+      "cannot_afford_move_in_costs": "Are you unable to afford move-in costs for a new rental?",
+      "if_applying_for_back_rent_financial_hardship_within_12_months": "Have you experienced financial hardship in the last 12 months that affected your ability to pay rent?",
+      "qualify_as_individual_or_family": "Do you qualify as an individual or family according to HUD guidelines?",
+      "head_of_household_minimum_age_or_emancipated": "Are you at least 18 years old or legally emancipated?",
+      "annual_income_within_established_limits": "Is your annual income within the established program limits?",
+      "pass_criminal_background_check": "Can you pass a criminal background check?",
+      "ssn_documentation_provided_or_certified": "Can you provide SSN documentation or certification?",
+      "hud_citizenship_or_immigration_requirement_met": "Do you meet HUD citizenship or eligible immigration status requirements?",
+      "no_meth_production_conviction": "Can you confirm you have no convictions for methamphetamine production?",
+      "not_subject_to_sex_offender_registration": "Can you confirm you are not subject to sex offender registration?",
+      "no_outstanding_rent_debt": "Do you have any outstanding rent debt?",
+      "household_income_below_50_ami": "Is your household income below 50% of the Area Median Income (AMI)?",
+      "assistance_exception_if_receiving_assistance": "Are you currently receiving any other housing assistance?",
+      "non_discrimination_policy": "Do you agree to comply with our non-discrimination policy?",
+      "photo_id": "Do you have a valid government-issued photo ID?",
+      "proof_of_total_household_income": "Can you provide proof of total household income?",
+      "rental_agreement_or_address_proof": "Do you have a rental agreement or proof of address?",
+      "proof_of_rent_amount": "Can you provide proof of your rent amount?",
+      "tenant_ledger": "Do you have access to your tenant ledger?",
+      "landlord_contact_info": "Can you provide your landlord's contact information?",
+      "w9_form": "Can you provide a completed W-9 form?"
+    },
+    "completion": "Thanks! Your profile is all set. I'll take you to your dashboard now.",
+    "invalidInput": "Sorry, that doesn't seem to be valid. Please try again.",
+    "options": {
+      "yes": "Yes",
+      "no": "No"
+    }
+  }
+}

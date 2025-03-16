@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services", 
+    "resources": "Resources",
+    "contact": "Contact",
+    "login": "Log In",
+    "signOut": "Sign Out",
+    "dashboard": "Dashboard"
+  },
+  "chat": {
+    "greeting": "Hello! How can I assist you today?",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "thinking": "AI is thinking...",
+    "error": "Sorry, there was an error processing your request."
+  },
+  "onboarding": {
+    "welcome": "Hi! I'm your legal assistant. Before we begin, please select your preferred language.",
+    "fullName": "Great! I'll be helping you set up your profile. What's your full name?",
+    "dob": "When were you born? (MM/DD/YYYY)",
+    "email": "What is your email address?",
+    "phone": "What is your phone number?",
+    "address": "What is your current residential address? (Street, City, State, ZIP)",
+    "householdSize": "How many people are in your household?",
+    "sfResident": "Are you a current resident of San Francisco?",
+    "income": "What is your total annual household income?",
+    "employmentStatus": "What is your current employment status?",
+    "ssn": "Do you have a Social Security Number?",
+    "completion": "Thanks! Your profile is all set. I'll take you to your dashboard now.",
+    "invalidInput": "Sorry, that doesn't seem to be valid. Please try again.",
+    "options": {
+      "yes": "Yes",
+      "no": "No",
+      "employment": {
+        "employed": "Employed",
+        "unemployed": "Unemployed",
+        "selfEmployed": "Self-employed",
+        "retired": "Retired",
+        "student": "Student"
+      }
+    }
+  }
+}

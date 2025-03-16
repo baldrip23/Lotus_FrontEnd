@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "主页",
+    "resources": "资源",
+    "contact": "联系我们",
+    "login": "登录",
+    "signOut": "退出",
+    "dashboard": "控制面板"
+  },
+  "auth": {
+    "welcomeBack": "欢迎回来",
+    "signInToDashboard": "登录以访问您的控制面板",
+    "emailAddress": "电子邮件地址",
+    "enterEmail": "输入您的电子邮件",
+    "password": "密码",
+    "enterPassword": "输入您的密码",
+    "signingIn": "正在登录...",
+    "signIn": "登录",
+    "noAccount": "还没有账号？",
+    "signUp": "注册",
+    "joinCommunity": "加入我们的社区",
+    "createAccount": "创建您的账号",
+    "whatName": "您的姓名是？",
+    "enterFullName": "输入您的全名",
+    "whatEmail": "您的电子邮件地址是？",
+    "createPassword": "创建密码",
+    "passwordRequirement": "至少需要8个字符",
+    "creatingAccount": "正在创建账号...",
+    "haveAccount": "已经有账号？"
+  },
+  "chat": {
+    "greeting": "您好！我今天能为您提供什么帮助？",
+    "placeholder": "输入您的消息...",
+    "send": "发送",
+    "thinking": "AI正在思考...",
+    "error": "抱歉，处理您的请求时出现错误。"
+  },
+  "onboarding": {
+    "title": "法律援助助手",
+    "subtitle": "让我们为您提供个性化的法律支持",
+    "questions": {
+      "language": "您好！我是您的法律助手。在开始之前，请选择您的首选语言。",
+      "full_name": "您的全名是什么？",
+      "date_of_birth": "您的出生日期是？(月/日/年)",
+      "current_sf_resident": "您目前是旧金山居民吗？",
+      "household_size": "您的家庭成员有多少人？",
+      "annual_household_income": "您的家庭年收入总额是多少？",
+      "has_past_due_rent": "您有逾期未付的房租吗？",
+      "cannot_afford_move_in_costs": "您是否无法负担新租房的入住费用？",
+      "if_applying_for_back_rent_financial_hardship_within_12_months": "在过去12个月内，您是否因经济困难而影响了租金支付？",
+      "qualify_as_individual_or_family": "根据HUD指南，您是否符合个人或家庭资格？",
+      "head_of_household_minimum_age_or_emancipated": "您是否年满18岁或已获得法定解放？",
+      "annual_income_within_established_limits": "您的年收入是否在规定限额内？",
+      "pass_criminal_background_check": "您能通过犯罪背景调查吗？",
+      "ssn_documentation_provided_or_certified": "您能提供社会安全号码文件或认证吗？",
+      "hud_citizenship_or_immigration_requirement_met": "您是否满足HUD公民身份或合格移民身份要求？",
+      "no_meth_production_conviction": "您能确认没有制造冰毒的定罪记录吗？",
+      "not_subject_to_sex_offender_registration": "您能确认不需要进行性犯罪者登记吗？",
+      "no_outstanding_rent_debt": "您有未清偿的租金债务吗？",
+      "household_income_below_50_ami": "您的家庭收入是否低于地区中位收入（AMI）的50%？",
+      "assistance_exception_if_receiving_assistance": "您目前是否正在接受其他住房援助？",
+      "non_discrimination_policy": "您是否同意遵守我们的非歧视政策？",
+      "photo_id": "您有有效的政府颁发的带照片身份证件吗？",
+      "proof_of_total_household_income": "您能提供家庭总收入证明吗？",
+      "rental_agreement_or_address_proof": "您有租赁协议或地址证明吗？",
+      "proof_of_rent_amount": "您能提供租金金额证明吗？",
+      "tenant_ledger": "您能获取租户账本吗？",
+      "landlord_contact_info": "您能提供房东的联系信息吗？",
+      "w9_form": "您能提供填写完整的W-9表格吗？"
+    },
+    "completion": "谢谢！您的个人资料已设置完成。我现在带您去控制面板。",
+    "invalidInput": "抱歉，输入似乎无效。请重试。",
+    "options": {
+      "yes": "是",
+      "no": "否"
+    }
+  }
+}

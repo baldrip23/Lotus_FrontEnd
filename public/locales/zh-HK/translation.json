@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "主頁",
+    "services": "服務",
+    "resources": "資源",
+    "contact": "聯絡我哋",
+    "login": "登入",
+    "signOut": "登出",
+    "dashboard": "控制面板"
+  },
+  "chat": {
+    "greeting": "你好！我今日可以點幫到你？",
+    "placeholder": "輸入你嘅訊息...",
+    "send": "發送",
+    "thinking": "AI正在思考緊...",
+    "error": "對唔住，處理你嘅請求時出現錯誤。"
+  },
+  "onboarding": {
+    "welcome": "你好！我係你嘅法律助手。喺開始之前，請選擇你嘅首選語言。",
+    "fullName": "太好啦！我將幫你設置個人資料。你叫咩名？",
+    "dob": "你幾時出世？(月/日/年)",
+    "email": "你嘅電郵地址係？",
+    "phone": "你嘅電話號碼係？",
+    "address": "你而家住喺邊？（街道、城市、州、郵遞區號）",
+    "householdSize": "你屋企有幾多人？",
+    "sfResident": "你而家係唔係三藩市居民？",
+    "income": "你屋企嘅年收入總額係幾多？",
+    "employmentStatus": "你而家做緊咩工作？",
+    "ssn": "你有冇社會安全號碼？",
+    "completion": "多謝！你嘅個人資料已經設置好。我而家帶你去控制面板。",
+    "invalidInput": "對唔住，輸入似乎無效。請再試過。",
+    "options": {
+      "yes": "係",
+      "no": "唔係",
+      "employment": {
+        "employed": "在職",
+        "unemployed": "失業",
+        "selfEmployed": "自僱",
+        "retired": "退休",
+        "student": "學生"
+      }
+    }
+  }
+}

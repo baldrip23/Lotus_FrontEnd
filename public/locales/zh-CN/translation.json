@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "主页",
+    "services": "服务",
+    "resources": "资源",
+    "contact": "联系我们",
+    "login": "登录",
+    "signOut": "退出",
+    "dashboard": "控制面板"
+  },
+  "chat": {
+    "greeting": "您好！我今天能为您提供什么帮助？",
+    "placeholder": "输入您的消息...",
+    "send": "发送",
+    "thinking": "AI正在思考...",
+    "error": "抱歉，处理您的请求时出现错误。"
+  },
+  "onboarding": {
+    "welcome": "您好！我是您的法律助手。在开始之前，请选择您的首选语言。",
+    "fullName": "太好了！我将帮助您设置个人资料。您的全名是什么？",
+    "dob": "您的出生日期是？(月/日/年)",
+    "email": "您的电子邮件地址是？",
+    "phone": "您的电话号码是？",
+    "address": "您目前的居住地址是？（街道、城市、州、邮编）",
+    "householdSize": "您的家庭成员有多少人？",
+    "sfResident": "您目前是旧金山居民吗？",
+    "income": "您的家庭年收入总额是多少？",
+    "employmentStatus": "您目前的就业状况是？",
+    "ssn": "您有社会安全号码吗？",
+    "completion": "谢谢！您的个人资料已设置完成。我现在带您去控制面板。",
+    "invalidInput": "抱歉，输入似乎无效。请重试。",
+    "options": {
+      "yes": "是",
+      "no": "否",
+      "employment": {
+        "employed": "就业",
+        "unemployed": "失业",
+        "selfEmployed": "自雇",
+        "retired": "退休",
+        "student": "学生"
+      }
+    }
+  }
+}
